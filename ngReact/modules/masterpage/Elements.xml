@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ClientsMasterPage" Url="_catalogs/masterpage" RootWebOnly="true" Path="">
+    <File Path="masterpage\clients.master" Url="clients.master"  Type="GhostableInLibrary" />
+  </Module>
+</Elements>
+
+

@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCamp2016", "CodeCamp2016\CodeCamp2016.csproj", "{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeCampSupporting", "CodeCampSupporting\CodeCampSupporting.csproj", "{898046C0-1095-407C-9466-06415D6A3510}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Angular", "Angular\Angular.csproj", "{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "React", "React\React.csproj", "{24208E49-3192-4C84-9F25-D0D4A8EB17C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD} = {ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ngReact", "ngReact\ngReact.csproj", "{613B028A-906B-4433-A14A-1B1ADF9E60A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{898046C0-1095-407C-9466-06415D6A3510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898046C0-1095-407C-9466-06415D6A3510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898046C0-1095-407C-9466-06415D6A3510}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{898046C0-1095-407C-9466-06415D6A3510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898046C0-1095-407C-9466-06415D6A3510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898046C0-1095-407C-9466-06415D6A3510}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{24208E49-3192-4C84-9F25-D0D4A8EB17C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24208E49-3192-4C84-9F25-D0D4A8EB17C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24208E49-3192-4C84-9F25-D0D4A8EB17C0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{24208E49-3192-4C84-9F25-D0D4A8EB17C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24208E49-3192-4C84-9F25-D0D4A8EB17C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24208E49-3192-4C84-9F25-D0D4A8EB17C0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{613B028A-906B-4433-A14A-1B1ADF9E60A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613B028A-906B-4433-A14A-1B1ADF9E60A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613B028A-906B-4433-A14A-1B1ADF9E60A1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{613B028A-906B-4433-A14A-1B1ADF9E60A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613B028A-906B-4433-A14A-1B1ADF9E60A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613B028A-906B-4433-A14A-1B1ADF9E60A1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

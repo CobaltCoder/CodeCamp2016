@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Libraries\" Type="ElementManifest" />
+    <ProjectItemFile Source="react-dom-server.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="react-dom-server.min.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="react-with-addons.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="react-with-addons.min.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="react.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="react.min.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="react-dom.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="react-dom.min.js" Target="Libraries\" Type="ElementFile" />
+    <ProjectItemFile Source="angular.min.js" Target="Libraries\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

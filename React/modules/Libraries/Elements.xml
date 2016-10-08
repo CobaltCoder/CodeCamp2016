@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Libraries" Url="style library">
+    <File Path="Libraries\react-dom-server.min.js" Url="Libraries/react-dom-server.min.js" Type="GhostableInLibrary" />
+    <File Path="Libraries\react-with-addons.min.js" Url="Libraries/react-with-addons.min.js" Type="GhostableInLibrary" />
+    <File Path="Libraries\react.min.js" Url="Libraries/react.min.js" Type="GhostableInLibrary" />
+    <File Path="Libraries\react-dom.min.js" Url="Libraries/react-dom.min.js" Type="GhostableInLibrary" />
+    <File Path="Libraries\jquery-3.1.1.min.js" Url="Libraries/jquery-3.1.1.min.js" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

@@ -1,0 +1,25 @@
+﻿<div ng-controller="ClientsController as vm"  class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            Clients
+        </h3>
+    </div>
+    <table class="table table-striped table-condensed">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="client in vm.clients track by $index">
+                <td>
+                    {{client.Name}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <input type="text" id="txtClientName" ng-model="vm.clientName" class="md-input"/>
+        <input type="button" id="btnSave" ng-click="vm.save()" value="Add" class="md-raised md-primary md-button md-ink-ripple" />
+    </div>
+</div>

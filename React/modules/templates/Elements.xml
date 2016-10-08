@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Templates" Url="style library">
+    <File Path="templates\clients.html" Url="templates/clients.html" Type="GhostableInLibrary"/>
+  </Module>
+</Elements>
+
+

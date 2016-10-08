@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="theapp" Url="style library">
+    <File Path="theapp\app-config.js" Url="App/app-config.js" Type="GhostableInLibrary" />
+    <File Path="theapp\clients-controller.js" Url="App/clients-controller.js" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

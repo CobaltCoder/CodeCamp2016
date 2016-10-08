@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="theApp\" Type="ElementManifest" />
+    <ProjectItemFile Source="clients-view.jsx" Target="theApp\" Type="ElementFile" />
+    <ProjectItemFile Source="dispatcher.js" Target="theApp\" Type="ElementFile" />
+    <ProjectItemFile Source="clients-dispatcher.js" Target="theApp\" Type="ElementFile" />
+    <ProjectItemFile Source="event-emitter.js" Target="theApp\" Type="ElementFile" />
+    <ProjectItemFile Source="clients-store.js" Target="theApp\" Type="ElementFile" />
+    <ProjectItemFile Source="app.js" Target="theApp\" Type="ElementFile" />
+    <ProjectItemFile Source="clients-view.generated.js" Target="theApp\" Type="ElementFile" />
+    <ProjectItemFile Source="clients-view.generated.js.map" Target="theApp\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

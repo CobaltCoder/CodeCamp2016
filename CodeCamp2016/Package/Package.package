@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b63df321-8418-4a5e-ac4f-2f154318dad9" solutionId="b63df321-8418-4a5e-ac4f-2f154318dad9" resetWebServer="false" sharePointProductVersion="15.0" name="CodeCamp2016" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="60c4a496-7dd9-4af1-89de-01ff42561bd5" />
+  </features>
+</package>

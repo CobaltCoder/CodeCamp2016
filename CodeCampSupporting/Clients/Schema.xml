@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="Clients" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/Clients" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/" EnableContentTypes="TRUE">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x0100E1C6421ED7CB4F878B27E567A9616DDE" Name="Client" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{9b5f1174-1f39-4e14-b6fc-311e6c415ae4}" DisplayName="Client Name" Required="FALSE" Name="ClientName" /><FieldRef ID="{fc2e188e-ba91-48c9-9dd3-16431afddd50}" DisplayName="$Resources:core,Address;" Name="WorkAddress" NumLines="2" Sortable="FALSE" /><FieldRef ID="{6ca7bd7f-b490-402e-af1b-2813cf087b1e}" DisplayName="$Resources:core,City;" Name="WorkCity" /><FieldRef ID="{ceac61d3-dda9-468b-b276-f4a6bb93f14f}" DisplayName="$Resources:core,State_Province;" Name="WorkState" NumLines="2" Sortable="TRUE" /><FieldRef ID="{9a631556-3dac-49db-8d2f-fb033b0fdc24}" DisplayName="$Resources:core,ZIP_Postal_Code;" Name="WorkZip" /><FieldRef ID="{976b5740-c2a2-4c35-b9d9-80cb07d546b6}" DisplayName="Contact Name" Required="FALSE" Name="ContactName" /><FieldRef ID="{ceba51c7-b9e1-4ace-8bde-41ae6f0e2aac}" DisplayName="Client Industry" Required="FALSE" Name="ClientIndustry" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitle"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

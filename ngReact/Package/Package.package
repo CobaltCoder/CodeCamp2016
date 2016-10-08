@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0b527dc2-d608-4923-90a4-0cabbb5db379" solutionId="0b527dc2-d608-4923-90a4-0cabbb5db379" resetWebServer="false" sharePointProductVersion="15.0" name="ngReact" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="44d54b84-33ca-4f28-ae98-24547d67c679" />
+  </features>
+</package>

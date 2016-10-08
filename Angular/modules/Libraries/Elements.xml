@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Libraries" Url="style library">
+    <File Path="Libraries\angular.min.js" Url="Libraries/angular.min.js" Type="GhostableInLibrary" />
+    <File Path="Libraries\jquery-3.1.1.min.js" Url="Libraries/jquery-3.1.1.min.js" Type="GhostableInLibrary" />
+  </Module>
+</Elements>

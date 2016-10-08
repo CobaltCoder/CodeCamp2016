@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\JavaScriptEngineSwitcher.V8.2.0.0\build\JavaScriptEngineSwitcher.V8.props" Condition="Exists('..\packages\JavaScriptEngineSwitcher.V8.2.0.0\build\JavaScriptEngineSwitcher.V8.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABFB61BB-9FC9-46AF-B337-9F7AA0269DAD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeCamp2016</RootNamespace>
+    <AssemblyName>CodeCamp2016</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClearScript, Version=5.4.7.0, Culture=neutral, PublicKeyToken=935d0c957da47c73, processorArchitecture=MSIL">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.V8.2.0.0\lib\net40-client\ClearScript.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.Core.2.0.0\lib\net40-client\JavaScriptEngineSwitcher.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.Msie, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.Msie.2.0.0\lib\net40-client\JavaScriptEngineSwitcher.Msie.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JavaScriptEngineSwitcher.V8, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c608b2a8cc9e4472, processorArchitecture=MSIL">
+      <HintPath>..\packages\JavaScriptEngineSwitcher.V8.2.0.0\lib\net40-client\JavaScriptEngineSwitcher.V8.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="JSPool, Version=2.0.0.0, Culture=neutral, PublicKeyToken=2fc7775f73072640, processorArchitecture=MSIL">
+      <HintPath>..\packages\JSPool.2.0.0\lib\net40-client\JSPool.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+    <Reference Include="MsieJavaScriptEngine, Version=2.0.0.0, Culture=neutral, PublicKeyToken=a3a2846a37ac0d3e, processorArchitecture=MSIL">
+      <HintPath>..\packages\MsieJavaScriptEngine.2.0.0\lib\net40-client\MsieJavaScriptEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="React.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9aed67b161f7db78, processorArchitecture=MSIL">
+      <HintPath>..\packages\React.Core.3.0.0-rc1\lib\net40\React.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="React.MSBuild, Version=3.0.0.0, Culture=neutral, PublicKeyToken=9aed67b161f7db78, processorArchitecture=MSIL">
+      <HintPath>..\packages\React.MSBuild.3.0.0-rc1\lib\net40\React.MSBuild.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+    <Reference Include="VroomJs, Version=1.2.3.0, Culture=neutral, PublicKeyToken=e7c52e67fcb0044f, processorArchitecture=MSIL">
+      <HintPath>..\packages\VroomJs.1.2.3\lib\net45\VroomJs.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{60c4a496-7dd9-4af1-89de-01ff42561bd5}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="modules\Libraries\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5f94826-79be-43ee-ac56-a620d1f9aa9b}</SharePointProjectItemId>
+    </None>
+    <None Include="modules\masterpage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{39417e33-309e-4e3a-b446-1a05a2e5b0cd}</SharePointProjectItemId>
+    </None>
+    <None Include="modules\templates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{17ae1a1d-e408-4edb-ad20-4daf99ab13c5}</SharePointProjectItemId>
+    </None>
+    <None Include="modules\theApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c4cdd32b-295b-4ca0-8071-6502373bf725}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{b63df321-8418-4a5e-ac4f-2f154318dad9}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="modules\masterpage\clients.master" />
+    <None Include="src\react\clientlist.jsx" />
+    <None Include="TransformBabel.proj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\master-pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="modules\templates\clients.html" />
+    <Content Include="modules\templates\Elements.xml" />
+    <Content Include="modules\theApp\clients-controller.js" />
+    <Content Include="modules\Libraries\angular.min.js" />
+    <Content Include="modules\theApp\app-config.js" />
+    <Content Include="modules\Libraries\Elements.xml" />
+    <Content Include="modules\Libraries\react-dom-server.js" />
+    <Content Include="modules\Libraries\react-dom-server.min.js" />
+    <Content Include="modules\Libraries\react-dom.js" />
+    <Content Include="modules\Libraries\react-dom.min.js" />
+    <Content Include="modules\Libraries\react-with-addons.js" />
+    <Content Include="modules\Libraries\react-with-addons.min.js" />
+    <Content Include="modules\Libraries\react.js" />
+    <Content Include="modules\Libraries\react.min.js" />
+    <Content Include="modules\masterpage\Elements.xml" />
+    <Content Include="modules\theApp\Elements.xml" />
+    <Content Include="src\angular\directives\directives.js" />
+    <Content Include="src\angular\templates\clients.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\JavaScriptEngineSwitcher.V8.2.0.0\build\JavaScriptEngineSwitcher.V8.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\JavaScriptEngineSwitcher.V8.2.0.0\build\JavaScriptEngineSwitcher.V8.props'))" />
+  </Target>
+  <Target Name="TransformBabel" AfterTargets="Build">
+    <Exec Command="&quot;$(msbuildtoolspath)\msbuild.exe&quot; $(ProjectDirectory)TransformBabel.proj /p:OutputPath=$(OutputPath) /nr:false" />
+  </Target>
+</Project>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95F6B2D6-33DB-46CA-BAC9-356DED93E07D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Angular</RootNamespace>
+    <AssemblyName>Angular</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\SPAngular\SPAngular.feature">
+      <FeatureId>{411a3fda-6579-416e-9f2a-fe03789d8a8c}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="modules\Libraries\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{087aeb93-ee6f-47d0-b96f-cdd9b13a4afd}</SharePointProjectItemId>
+    </None>
+    <None Include="modules\masterpage\clients.master" />
+    <None Include="modules\masterpage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84aa7a45-4d0a-4137-8a0c-288bd452eeb1}</SharePointProjectItemId>
+    </None>
+    <None Include="modules\templates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ff3f55d-05a1-47de-9d81-04ae0a4d84b2}</SharePointProjectItemId>
+    </None>
+    <None Include="modules\theApp\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d433c7a-1ddc-4c86-8a6c-69b305a5530f}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{ca5889a8-a2a3-4656-b89d-fbe17c92fe81}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\SPAngular\SPAngular.Template.xml">
+      <DependentUpon>SPAngular.feature</DependentUpon>
+    </Content>
+    <Content Include="modules\Libraries\angular.min.js" />
+    <Content Include="modules\Libraries\Elements.xml" />
+    <Content Include="modules\Libraries\jquery-3.1.1.min.js" />
+    <Content Include="modules\masterpage\Elements.xml" />
+    <Content Include="modules\templates\clients.html" />
+    <Content Include="modules\templates\Elements.xml" />
+    <Content Include="modules\theApp\app-config.js" />
+    <Content Include="modules\theApp\clients-controller.js" />
+    <Content Include="modules\theApp\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

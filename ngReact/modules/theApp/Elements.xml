@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="theapp" Url="style library">
+    <File Path="theapp\app-config.js" Url="App/app-config.js" Type="GhostableInLibrary" />
+    <File Path="theapp\clients-controller.js" Url="App/clients-controller.js" Type="GhostableInLibrary" />
+    <File Path="theApp\clients-dispatcher.js" Url="App/clients-dispatcher.js" Type="GhostableInLibrary" />
+    <File Path="theApp\clients-store.js" Url="App/clients-store.js" Type="GhostableInLibrary" />
+    <File Path="theApp\dispatcher.js" Url="App/dispatcher.js" Type="GhostableInLibrary" />
+    <File Path="theApp\event-emitter.js" Url="App/event-emitter.js" Type="GhostableInLibrary" />
+    <File Path="theApp\clients-view.generated.js" Url="App/clients-view.generated.js" Type="GhostableInLibrary" />
+  </Module>
+</Elements>
